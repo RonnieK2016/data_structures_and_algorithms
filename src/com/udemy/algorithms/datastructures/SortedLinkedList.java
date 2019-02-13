@@ -39,8 +39,8 @@ public class SortedLinkedList<V extends Comparable<V>> {
             Node newNode = new Node(value);
             previous.next = newNode;
             newNode.next = c;
+            size++;
         }
-
     }
 
     public int getSize() {
